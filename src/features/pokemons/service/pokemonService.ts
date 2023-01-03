@@ -4,7 +4,7 @@ import ApiService from 'app/api/base/apiService';
 import type { PaginationArgs } from 'types/pagination';
 
 import type { Pokemon } from '../types/pokemon';
-import type { APIResponse, NamedAPIResource } from '../types/service-types';
+import type { APIResponse, NamedAPIResource } from '../types/pokemonService';
 
 export default class PokemonService extends ApiService {
   constructor() {
