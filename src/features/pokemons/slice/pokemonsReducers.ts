@@ -1,3 +1,4 @@
+import { NamedAPIResource } from './../types/pokemonService';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { AxiosResponse } from 'axios';
 
@@ -22,7 +23,7 @@ export const getAllPokemonsThunk = createAsyncThunk(
       });
 
       const mappedPromisesByName = pokemonsList.results.map(
-        ({ name }: Pokemon) => pokemonService.getPokemonByName(name),
+        ({ name }: NamedAPIResource) => pokemonService.getPokemonByName(name),
       );
       const triggeredPromises = await Promise.allSettled(mappedPromisesByName);
       const mapPromiseToArray = (

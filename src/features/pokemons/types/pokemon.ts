@@ -1,4 +1,4 @@
-import { NamedAPIResource } from './service';
+import { NamedAPIResource } from './pokemonService';
 
 export type PokemonAbility = {
   is_hidden: boolean;
