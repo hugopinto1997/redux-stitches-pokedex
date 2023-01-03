@@ -21,7 +21,7 @@ const App = () => {
           <Route path={routes.POKEMONS_BY_NAME} element={<PokemonDetail />} />
         </Route>
       </Route>
-      <Route path="*" element={<Navigate to="/pokemons" />} />
+      <Route path="*" element={<Navigate to={routes.POKEMONS} />} />
     </Routes>
   );
 };
