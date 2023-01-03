@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { AxiosResponse } from 'axios';
 
-import PokemonService from '../service/pokemon-service';
+import PokemonService from '../service/pokemonService';
 import { Pokemon } from '../types/pokemon';
 import { pokemonActions } from './pokemonsActionTypes';
 
