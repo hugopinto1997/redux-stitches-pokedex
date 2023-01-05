@@ -1,9 +1,9 @@
-import { NamedAPIResource } from './../types/pokemonService';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { AxiosResponse } from 'axios';
 
 import PokemonService from '../service/pokemonService';
 import { Pokemon } from '../types/pokemon';
+import { NamedAPIResource } from '../types/pokemonService';
 import { pokemonActions } from './pokemonsActionTypes';
 
 const pokemonService = new PokemonService();

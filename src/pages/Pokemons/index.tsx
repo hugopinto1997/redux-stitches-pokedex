@@ -1,16 +1,15 @@
 import { useEffect } from 'react';
 
-import {
-  getAllPokemonsThunk,
-  getPokemonByNameThunk,
-} from 'features/pokemons/slice/pokemonsReducers';
-import { allPokemonsSelector } from 'features/pokemons/slice/pokemonsSlice';
-
 import ComponentLoader from 'components/ComponentLoader';
 import EmptyFallback from 'components/EmptyFallback';
 import Pagination from 'components/Pagination';
 import { Box, Grid, Section } from 'components/ui/container';
 import PokemonCard from 'features/pokemons/components/PokemonCard';
+import {
+  getAllPokemonsThunk,
+  getPokemonByNameThunk,
+} from 'features/pokemons/slice/pokemonsReducers';
+import { allPokemonsSelector } from 'features/pokemons/slice/pokemonsSlice';
 import { useAppDispatch } from 'hooks/useAppDispatch';
 import { useAppSelector } from 'hooks/useAppSelector';
 import { usePaginationController } from 'hooks/usePaginationController';

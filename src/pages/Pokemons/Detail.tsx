@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 
-import { getPokemonDetailThunk } from 'features/pokemons/slice/pokemonsReducers';
-import { pokemonDetailSelector } from 'features/pokemons/slice/pokemonsSlice';
 import { useParams } from 'react-router-dom';
 
 import ComponentLoader from 'components/ComponentLoader';
 import EmptyFallback from 'components/EmptyFallback';
 import { Section } from 'components/ui/container';
 import PokemonDetailBanner from 'features/pokemons/components/PokemonDetailBanner';
+import { getPokemonDetailThunk } from 'features/pokemons/slice/pokemonsReducers';
+import { pokemonDetailSelector } from 'features/pokemons/slice/pokemonsSlice';
 import { useAppDispatch } from 'hooks/useAppDispatch';
 import { useAppSelector } from 'hooks/useAppSelector';
 
